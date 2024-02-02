@@ -8,12 +8,14 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 const playerNumber = Math.floor( Math.random() * 6 + 1);
 console.log("Numero giocatore: ", playerNumber);
-document.querySelector("#playerOutput span").innerText = playerNumber;
+document.querySelector("#playerOutput img").src = `./img/${playerNumber}.png`;
 
 
 const computerNumber = Math.floor( Math.random() * 6 + 1);
 console.log("Numero computer: ", computerNumber);
-document.querySelector("#computerOutput span").innerText = computerNumber;
+// document.querySelector("#computerOutput span").innerText = computerNumber;
+document.querySelector("#computerOutput img").src = `./img/${computerNumber}.png`;
+
 
 
 
